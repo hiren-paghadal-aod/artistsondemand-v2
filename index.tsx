@@ -447,23 +447,90 @@ const Stats = () => {
   );
 };
 
-const Sentence1 = () => {
+// const Sentence1 = () => {
+//   return (
+//     <section id="Sentence1" className="bg-white py-16 border-b">
+//       <div
+//         className="flex overflow-x-auto pb-8 snap-x"
+//         style={{
+//           animation: "scroll-right 10s linear infinite",
+//           width: "max-content",
+//         }}
+//       >
+//         <p className="whitespace-nowrap w-max text-4xl md:text-6xl font-bold text-dark-900">
+//           India’s First One-Stop Platform for Easy Artists Booking.
+//         </p>
+//       </div>
+//     </section>
+//   );
+// };
+
+const FeatureHighlight = () => {
   return (
-    <section id="Sentence1" className="bg-white py-16 border-b">
-      <div
-        className="flex overflow-x-auto pb-8 snap-x"
-        style={{
-          animation: "scroll-right 10s linear infinite",
-          width: "max-content",
-        }}
-      >
-        <p className="whitespace-nowrap w-max text-4xl md:text-6xl font-bold text-dark-900">
-          India’s First One-Stop Platform for Easy Artists Booking.
+    <section id="feature" className="py-24 bg-brand-light/30 relative overflow-hidden">
+      <div className="container mx-auto px-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-dark-900 mb-4">
+          India’s First One-Stop Platform for <br></br>Easy Artists Booking.
+        </h2>
+        <p className="text-gray-600 mt-2">
+          Discover how simple it is to connect with the best artists for your events.
         </p>
       </div>
+
+      <div className="relative w-full overflow-hidden mt-12">
+        {/* Decorative Gradient Edges */}
+        <div className="absolute left-0 top-0 h-full w-15 bg-gradient-to-r from-white/80 to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 h-full w-15 bg-gradient-to-l from-white/80 to-transparent z-10 pointer-events-none"></div>
+
+        {/* Optional Decorative Box */}
+        <div className="flex justify-center gap-6 overflow-x-auto pb-8" style={{
+            animation: "scroll-left 20s linear infinite",
+            width: "max-content"
+          }}>
+          <div className="flex-shrink-0 w-[85vw] md:w-[45vw]">
+            <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col justify-center items-center">
+              <p className="text-gray-700 italic text-lg md:text-xl text-center">
+                "Your Trusted Marketplace for Booking"
+              </p>
+            </div>
+          </div>
+          <div className="flex-shrink-0 w-[85vw] md:w-[45vw]">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col justify-center items-center">
+              <p className="text-gray-700 italic text-lg md:text-xl text-center">
+                "India’s Smartest Way to Hire Artists for Any Event."
+              </p>
+            </div>
+          </div>
+          <div className="flex-shrink-0 w-[85vw] md:w-[45vw]">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col justify-center items-center">
+              <p className="text-gray-700 italic text-lg md:text-xl text-center">
+                "Discover, Connect & Book Artists — All in One Place."
+              </p>
+            </div>
+          </div>
+          <div className="flex-shrink-0 w-[85vw] md:w-[45vw]">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col justify-center items-center">
+              <p className="text-gray-700 italic text-lg md:text-xl text-center">
+                "Making Artist Booking Transparent, Easy, and Reliable"
+              </p>
+            </div>
+          </div>
+          <div className="flex-shrink-0 w-[85vw] md:w-[45vw]">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 h-full flex flex-col justify-center items-center">
+              <p className="text-gray-700 italic text-lg md:text-xl text-center">
+                "Transform Your Event With Verified and Skilled Performers."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
     </section>
   );
 };
+
+// export default FeatureHighlight;
 
 
 const Services = () => {
@@ -861,7 +928,8 @@ const App = () => {
     <main>
       <Hero onOpenForm={openForm} />
       <Stats />
-      <Sentence1 />
+      {/* <Sentence1 /> */}
+      <FeatureHighlight />
       <Services />
       <HowItWorks />
       <Reviews />

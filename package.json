@@ -2,7 +2,7 @@
   "name": "artistsondemand",
   "homepage": "https://hiren-paghadal-aod.github.io//artistsondemand-v2",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
