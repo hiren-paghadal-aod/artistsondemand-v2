@@ -31,7 +31,7 @@ const HERO_SLIDES = [
     id: 4,
     image: "https://cdn.shopify.com/s/files/1/0752/4243/files/oweb_gold_nails_Front.jpg?180",
     title: <>Artistry In <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-orange-300">Every Detail</span></>,
-    subtitle: "Connect with makeup artists, and creative performers to bring your unique vision to life."
+    subtitle: "Connect with makeup artists and creative performers to bring your unique vision to life."
   }
 ];
 
