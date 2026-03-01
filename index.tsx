@@ -31,7 +31,7 @@ const HERO_SLIDES = [
     id: 4,
     image: "https://cdn.shopify.com/s/files/1/0752/4243/files/oweb_gold_nails_Front.jpg?180",
     title: <>Artistry In <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand to-orange-300">Every Detail</span></>,
-    subtitle: "Connect with makeup artists, painters, and creative performers to bring your unique vision to life."
+    subtitle: "Connect with makeup artists, and creative performers to bring your unique vision to life."
   }
 ];
 
@@ -69,8 +69,8 @@ const SERVICES = [
     id: 4, 
     title: "Singer", 
     description: "Elevate your event with a professional singer, live and on demand.",
-    icon: "fa-palette",
-    image: "https://i.etsystatic.com/17849024/r/il/cd1a03/2188682452/il_500x500.2188682452_naw7.jpg"
+    icon: "fa-microphone",
+    image: "https://img.freepik.com/premium-photo/singer-singing-stage-with-audience-applauding_943281-31598.jpg"
   },
 ];
 
