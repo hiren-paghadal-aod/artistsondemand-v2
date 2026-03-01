@@ -38,8 +38,8 @@ const HERO_SLIDES = [
 const REVIEWS = [
   { id: 1, name: "Priya Sharma", role: "Event Planner", text: "AOD made it incredibly easy to find a live band for my corporate event. The artists were professional and punctual.", rating: 5 },
   { id: 2, name: "Rahul Verma", role: "Wedding Client", text: "I booked a photographer and makeup artist through AOD. The coordination was seamless and the quality was top-notch.", rating: 4.5 },
-  { id: 3, name: "Sneha Gupta", role: "Gallery Owner", text: "Finding talented painters for our live art show was a breeze. Highly recommended service for quick artist requirements.", rating: 4 },
-  { id: 4, name: "Amit Patel", role: "Restaurant Owner", text: "The musician we booked was a hit! The platform is very user-friendly.", rating: 5 },
+  { id: 3, name: "Sneha Gupta", role: "Family Function", text: "Finding a talented singer for our event was a breeze. The performance was captivating, professional, and truly elevated the entire atmosphere. Highly recommended service for anyone needing quality live vocals on short notice.", rating: 4 },
+  { id: 4, name: "Hemang Patel", role: "Restaurant Owner", text: "The musician we booked was a hit! The platform is very user-friendly.", rating: 5 },
   { id: 5, name: "Zoya Khan", role: "Fashion Designer", text: "Best place to find creative talent in India. Loved the service.", rating: 4.5 },
 ];
 
@@ -67,8 +67,8 @@ const SERVICES = [
   },
   { 
     id: 4, 
-    title: "Fine Artists", 
-    description: "Engage your audience with live art—painters and sketch artists on demand.",
+    title: "Singer", 
+    description: "Elevate your event with a professional singer, live and on demand.",
     icon: "fa-palette",
     image: "https://i.etsystatic.com/17849024/r/il/cd1a03/2188682452/il_500x500.2188682452_naw7.jpg"
   },
@@ -754,7 +754,7 @@ const HireForm = ({ onClose, onSuccess }) => {
   const [selectedServices, setSelectedServices] = useState([]);
   const [otherServiceText, setOtherServiceText] = useState("");
 
-  const options = ["Photographer",  "Make-up Artists", "Mehandi Artists", "Musician/Band", "Fine Artist", "Other"];
+  const options = ["Photographer",  "Make-up Artists", "Mehandi Artists", "Musician/Band", "Singer", "Other"];
 
   const handleCheckboxChange = (option) => {
     setSelectedServices(prev => 
@@ -841,7 +841,7 @@ const JoinForm = ({ onClose, onSuccess }) => {
   const [selectedProfessions, setSelectedProfessions] = useState([]);
   const [otherProfessionText, setOtherProfessionText] = useState("");
 
-  const professionOptions = ["Photographer", "Videographer", "Makeup Artist", "Musician/Singer", "Dancer", "Painter/Artist", "Other"];
+  const professionOptions = ["Photographer", "Videographer", "Makeup Artist", "Musician/Singer", "Dancer", "Singer", "Other"];
 
   const handleCheckboxChange = (option) => {
     setSelectedProfessions(prev => prev.includes(option) ? prev.filter(item => item !== option) : [...prev, option]);
@@ -969,4 +969,4 @@ const App = () => {
 };
 
 const root = createRoot(document.getElementById('root'));
-root.render(<App />);
+root.render(<App />);                                                                                                                                                                  
